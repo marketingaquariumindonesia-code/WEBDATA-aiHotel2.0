@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Data Pengunjung Hotel</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- === HALAMAN LOGIN === -->
+<div class="card" id="loginCard">
+  <h2>🔒 Login Petugas</h2>
+  <form id="loginForm">
+    <label for="passwordInput">Masukkan Password</label>
+    <input type="password" id="passwordInput" placeholder="Ketik password..." required>
+    <button type="submit">Masuk</button>
+  </form>
+  <p id="loginStatus" class="status"></p>
+</div>
+
+<!-- === HALAMAN FORM UTAMA === -->
+<div class="card" id="mainCard" style="display:none;">
+  <div class="header-img"></div>
+  <div class="content">
+    <h2>📋 Data Pengunjung Hotel</h2>
+    <form id="dataForm">
+      <label>Waktu</label>
+      <input type="text" id="timestamp" readonly>
+
+      <label>Nama Pengunjung</label>
+      <input type="text" id="nama" placeholder="Masukkan nama" required>
+
+      <label>Nama Hotel</label>
+      <input type="text" id="hotel" placeholder="Masukkan nama hotel" required>
+
+      <label>Kode Voucher</label>
+      <input type="text" id="kodevoucher" placeholder="Masukkan kode voucher">
+
+      <button type="submit">Kirim Data</button>
+    </form>
+    <div id="status" class="status"></div>
+  </div>
+</div>
+
+<!-- === PANGGIL JAVASCRIPT EKSTERNAL === -->
+<script src="script.js"></script>
+
+</body>
+</html>
